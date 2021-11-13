@@ -1,0 +1,78 @@
+* {
+    background-color: black;
+    color: rgba(15, 189, 189, 50);
+}
+
+.title {
+    margin: 20px;
+    position: relative;
+}
+
+.title h1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-top: 20px;
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+header div a {
+    display: flex;
+    text-decoration: none;
+    float: right;;
+    flex-wrap: wrap;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.check:hover {
+    color: antiquewhite;
+}
+
+body {
+    position: relative;
+    padding: 20px;
+}
+
+.coral {
+    height: 800px;
+    width: 100%;
+    padding: 50px;
+    background-image: url("./hammer-coral-photo-1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.parameters {
+    width: 40%;
+    display: inline-block;
+}
+
+body li {
+    color: green;
+    padding: 8px 0 0 0;
+}
+
+body p {
+    color: blueviolet;
+    padding: 2px 5px 0 0;
+}
+
+.inputs {
+  float: right;
+  margin-top: 20px;
+  margin-right: 50px;
+}
+
+footer {
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+footer h3 {
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+}
