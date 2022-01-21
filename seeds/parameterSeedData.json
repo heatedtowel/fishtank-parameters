@@ -4,11 +4,11 @@
     "description": "The accepted pH level in a basic saltwater system is between 7.6 and 8.4, but reef tanks are more sensitive, and therefore need to be kept at the higher end of the pH scale, 8.0 to 8.4"
   },
   {
-    "parameter": "Alk",
+    "parameter": "Alkalinity",
     "description": "The ideal alkalinity for a reef tank is 8-12 dkh. That’s a pretty broad range. Perhaps more important than reaching a level within that range is trying to stay consistent once you find an alkalinity level that suits the inhabitants of your tank and is easy to maintain, based on your local water."
   },
   {
-    "parameter": "Mag",
+    "parameter": "Magnesium",
     "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, commodi, laudantium dicta maiores repudiandae minima rerum atione vero adipisci hic eius voluptatibus minus veritatis vitae, alias ad ullam mollitia aperiam."
   },
   {

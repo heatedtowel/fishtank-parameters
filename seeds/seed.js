@@ -12,7 +12,7 @@ const seedDatabase = async () => {
     returning: true,
   });
 
-  await Parameters.bulkCreate(presidentSeedData, {
+  await Parameters.bulkCreate(parameterSeedData, {
     individualHooks: true,
     returning: true,
   });

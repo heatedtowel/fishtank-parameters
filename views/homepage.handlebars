@@ -1,19 +1,22 @@
 <section class="parameters" id="parentParameters">
-  <div>
-    <dl id="parameterList">
-      {{#each parameter}}
-      <dt>{{parameter}}</dt>
-      <dd>{{descriptino}}</dd>
-      {{/each}}
-    </dl>
+  <div class="parameterSubgrid">
+    {{#each parameters}}
+    <div class="parameterList">
+      <div class="parameter">{{this.parameter}}</div>
+      <div class="description">{{this.description}}</div>
+    </div>
+    {{/each}}
   </div>
   <div id="parameterInputs" class='showHide'>
-    <form action="">
-      {{#each}}
-      <label for="{{parameter}}">{{parameter}}:</label>
-      <input type="text" data-parent='{{parameter}}' id="{{parameter}}" name="{{parameter}}"><br><br>
+    <div class="inputSubgrid">
+      {{#each parameters}}
+      <div class="inputs">
+        <label for="{{this.parameter}}">{{this.parameter}}:</label>
+        <input type="text" data-parent='{{this.parameter}}'
+          id="{{this.parameter}}" name="{{this.parameter}}">
+      </div>
       {{/each}}
       <input type="button" id='submitParams' value="Submit">
-    </form>
+    </div>
   </div>
 </section>
