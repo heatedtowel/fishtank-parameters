@@ -12,6 +12,8 @@
     flex-wrap: wrap;
     background-color: var(--background);
     opacity: 80%;
+    padding: 3rem;
+    margin-bottom: 3rem;
     font-weight: 300;
     font-size: 20px;
 }
@@ -36,6 +38,15 @@ button:hover {
     background-color: black;
 }
 
+#searchParent {
+    text-align: center;
+    padding: 2rem;
+}
+
+#searchParent > h1 {
+    color: rgb(235, 235, 235);
+}
+
 body {
     min-height: 100vh;
     width: 100%;
@@ -48,6 +59,8 @@ body {
 #parentParameters {
     padding: 4rem;
     background-color: var(--background);
+    border-radius: 5rem;
+    margin: 0 8rem;
     opacity: 80%;
     display: flex;
 }
@@ -61,7 +74,7 @@ body dd {
 }
 
 #parameterInputs {
-
+    padding: 2rem;
 }
 
 .showHide {

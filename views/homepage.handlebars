@@ -1,0 +1,15 @@
+<div id="mainContainerMultiple">
+  {{#each presidents}}
+  <section id="presContainer">
+    <div>
+    <img id="image" src="{{image}}" alt="President image">
+    </div>
+    <div>
+    <a href="/president/{{id}}"><h1 id="name">{{name}}</h1></a>
+    </div>
+    <div>
+    <h2 id="number">{{ordinal number}} President</h2>
+    </div>
+  </section>
+  {{/each}}
+</div>
