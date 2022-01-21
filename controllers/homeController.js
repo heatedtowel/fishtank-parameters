@@ -1,5 +1,6 @@
 const { Parameters } = require('../models');
 const withAuth = require('../utils/auth');
+const router = require('express').Router();
 
 const sanatize = (value) => {
   return JSON.parse(JSON.stringify(value));
@@ -8,12 +9,12 @@ const sanatize = (value) => {
 
 router.get('/', async (req, res) => {
 
-  const presidentData = await President.findAll({});
+  const parameterData = await Parameters.findAll({});
 
-  const presidents = presidentData.map((presData) => presData.get({ plain: true }));
+  const parameters = parameterData.map((params) => params.get({ plain: true }));
 
 
-  res.render('homepage', { presidents, loggedIn: req.session.logged_in });
+  res.render('homepage', { parameters, loggedIn: req.session.logged_in });
 });
 
 router.get('/login', async (req, res) => {

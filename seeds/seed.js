@@ -1,8 +1,8 @@
 const sequelize = require('../config/connection');
-const { User , President } = require('../models');
+const { User , Parameters } = require('../models');
 
 const userData = require('./userData.json');
-const presidentSeedData = require('./presidentSeedData.json');
+const parameterSeedData = require('./parameterSeedData.json');
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
@@ -12,7 +12,7 @@ const seedDatabase = async () => {
     returning: true,
   });
 
-  await President.bulkCreate(presidentSeedData, {
+  await Parameters.bulkCreate(presidentSeedData, {
     individualHooks: true,
     returning: true,
   });
