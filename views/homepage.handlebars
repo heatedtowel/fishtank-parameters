@@ -1,15 +1,29 @@
-<div id="mainContainerMultiple">
-  {{#each presidents}}
-  <section id="presContainer">
-    <div>
-    <img id="image" src="{{image}}" alt="President image">
-    </div>
-    <div>
-    <a href="/president/{{id}}"><h1 id="name">{{name}}</h1></a>
-    </div>
-    <div>
-    <h2 id="number">{{ordinal number}} President</h2>
-    </div>
-  </section>
-  {{/each}}
-</div>
+    <section class="parameters" id="parentParameters">
+        <div>
+            <dl id="parameterList">
+              {{#each parameter}}
+                <dt>{{parameter}}</dt>
+                <dd>{{descriptino}}</dd>
+              {{/each}}
+            </dl>
+        </div>
+        <div id="parameterInputs" class='showHide'>
+            <form action="">
+                <label for="PH">PH:</label>
+                <input type="text" data-parent='ph' id="ph" name="PH"><br><br>
+                <label for="Alk">Alk:</label>
+                <input type="text" data-parent='alk' id="alk" name="Alk"><br><br>
+                <label for="Mag">Mag:</label>
+                <input type="text" data-parent='mag' id="mag" name="Mag"><br><br>
+                <label for="Calcium">Calcium:</label>
+                <input type="text" data-parent='calc' id="calc" name="Calcium"><br><br>
+                <label for="Ammonia">Ammonia:</label>
+                <input type="text" data-parent='amm' id="amm" name="Ammonia"><br><br>
+                <label for="Phosphate">Phosphate:</label>
+                <input type="text" data-parent='phos' id="phos" name="Phosphate"><br><br>
+                <label for="Nitrate">Nitrate:</label>
+                <input type="text" data-parent='nit' id="nit" name="Nitrate"><br><br>
+                <input type="button" id='submitParams' value="Submit">
+            </form>
+        </div>
+    </section>

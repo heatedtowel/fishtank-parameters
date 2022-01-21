@@ -1,0 +1,34 @@
+[
+  {
+    "parameter": "PH",
+    "description": "The accepted pH level in a basic saltwater system is between 7.6 and 8.4, but reef tanks are more sensitive, and therefore need to be kept at the higher end of the pH scale, 8.0 to 8.4"
+  },
+  {
+    "parameter": "Alk",
+    "description": "The ideal alkalinity for a reef tank is 8-12 dkh. That’s a pretty broad range. Perhaps more important than reaching a level within that range is trying to stay consistent once you find an alkalinity level that suits the inhabitants of your tank and is easy to maintain, based on your local water."
+  },
+  {
+    "parameter": "Mag",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, commodi, laudantium dicta maiores repudiandae minima rerum atione vero adipisci hic eius voluptatibus minus veritatis vitae, alias ad ullam mollitia aperiam."
+  },
+  {
+    "parameter": "Calcium",
+    "description": "The world’s oceans tend to have reef calcium levels between 380-420ppm (parts per million). That’s a fairly narrow range (around~400ppm). So, to keep things simple, I generally think of the optimal reef tank calcium level to be about 400ppm."
+  },
+  {
+    "parameter": "Ammonia",
+    "description": "Ammonia occurs naturally as a byproduct of the organic waste breaking down in your tank. Ammonia gets into your reef tank when your fish pee (yes, normal biological functions apply to fish, too) and when food and other biological components (plants, live rock, etc.) rot. So it’s perfectly natural to see it in your tank. The problem is ammonia is toxic waste in your aquarium. In chemical terms, ammonia is a base or a basic compound – the opposite of an acid."
+  },
+  {
+    "parameter": "Phosphate",
+    "description": "The seventh most important reef tank water parameter to monitor is phosphate. Phosphate occurs naturally on reefs and is present at a level of ~0.13 ppm. But phosphates in a saltwater aquarium can be a big-time trouble-maker, even at natural levels."
+  },
+  {
+    "parameter": "Nitrate",
+    "description": "The fourth most important water parameter for you to monitor in your reef tank is nitrate. Technically speaking, the presence of low levels of nitrates in your tank could be considered a good thing. It means your biological filter is working. (News flash: you want that!)"
+  },
+  {
+    "parameter": "Nitrite",
+    "description": "you want your nitrites to remain as close to ZERO as possible. If you see any level other than zero while you’re testing your water, it’s a symptom that A) your biological filter has crashed or B) it can’t keep up with SOME large source of ammonia (say, a dead fish you haven’t located yet)."
+  }
+]
