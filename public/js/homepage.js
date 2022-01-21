@@ -29,7 +29,7 @@ const enterParams = async (event) => {
     ];
 
     try {
-        const response = await fetch('/api/submit', {
+        const response = await fetch('/api/params/submit', {
             method: 'POST',
             body: JSON.stringify({ params }),
             headers: { 'Content-Type': 'application/json' },

@@ -14,6 +14,13 @@ router.get('/', async (req, res) => {
   res.render('homepage', { parameters, loggedIn: req.session.logged_in });
 });
 
+router.get('/myParameters', async (req, res) => {
+  const parameterData = await Parameters.findAll({});
+  const parameters = parameterData.map((params) => params.get({ plain: true }));
+
+  res.render('userParams', { parameters, loggedIn: req.session.logged_in });
+});
+
 router.get('/login', async (req, res) => {
     res.render('login');
 });
