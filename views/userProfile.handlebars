@@ -1,0 +1,77 @@
+<section class="parameters" id="parentUserProfile">
+  <div>
+    <h1>userinfo</h1>
+    <img src="https://www.fillmurray.com/640/360" alt="">
+    <h1>Tank Info</h1>
+    <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis assumenda quia obcaecati ipsam. Consequuntur, cumque eveniet nostrum ab tempore in doloremque officia incidunt earum. Aliquam harum ullam culpa nesciunt accusantium?</h3>
+    <h1>Fish</h1>
+    <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis assumenda quia obcaecati ipsam. Consequuntur, cumque eveniet nostrum ab tempore in doloremque officia incidunt earum. Aliquam harum ullam culpa nesciunt accusantium?</h3>
+    <h1>Corals</h1>
+    <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis assumenda quia obcaecati ipsam. Consequuntur, cumque eveniet nostrum ab tempore in doloremque officia incidunt earum. Aliquam harum ullam culpa nesciunt accusantium?</h3>
+    <h1>Dosing</h1>
+    <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis assumenda quia obcaecati ipsam. Consequuntur, cumque eveniet nostrum ab tempore in doloremque officia incidunt earum. Aliquam harum ullam culpa nesciunt accusantium?</h3>
+    <h1>Salt</h1>
+    <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis assumenda quia obcaecati ipsam. Consequuntur, cumque eveniet nostrum ab tempore in doloremque officia incidunt earum. Aliquam harum ullam culpa nesciunt accusantium?</h3>
+  </div>
+  <div class="inputSubgrid">
+    <div class="inputs">
+      <label for="{{parameters.[0].parameter}}">{{parameters.[0].parameter}}:</label>
+      <input type="number" placeholder='8.1 - 8.4' step='.1' data-parent='{{parameters.[0].parameter}}'
+        id="{{parameters.[0].parameter}}" name="{{parameters.[0].parameter}}">
+    </div>
+    <div class="inputs">
+      <label for="{{parameters.[1].parameter}}">{{parameters.[1].parameter}}:</label>
+      <input type="number" placeholder='< .2' step='.01' data-parent='{{parameters.[1].parameter}}'
+        id="{{parameters.[1].parameter}}" name="{{parameters.[1].parameter}}">
+    </div>
+    <div class="inputs">
+      <label for="{{parameters.[2].parameter}}">{{parameters.[2].parameter}}:</label>
+      <input type="number" placeholder='8 - 12 dKH' step='1' data-parent='{{parameters.[2].parameter}}'
+        id="{{parameters.[2].parameter}}" name="{{parameters.[2].parameter}}">
+    </div>
+    <div class="inputs">
+      <label for="{{parameters.[3].parameter}}">{{parameters.[3].parameter}}:</label>
+      <input type="number" placeholder='1250 - 1350 ppm' step='25' data-parent='{{parameters.[3].parameter}}'
+        id="{{parameters.[3].parameter}}" name="{{parameters.[3].parameter}}">
+    </div>
+    <div class="inputs">
+      <label for="{{parameters.[4].parameter}}">{{parameters.[4].parameter}}:</label>
+      <input type="number" placeholder='350 - 450 ppm' step='50' data-parent='{{parameters.[4].parameter}}'
+        id="{{parameters.[4].parameter}}" name="{{parameters.[4].parameter}}">
+    </div>
+    <div class="inputs">
+      <label for="{{parameters.[5].parameter}}">{{parameters.[5].parameter}}:</label>
+      <input type="number" placeholder='Undetectable' step='.1' data-parent='{{parameters.[5].parameter}}'
+        id="{{parameters.[5].parameter}}" name="{{parameters.[5].parameter}}">
+    </div>
+    <div class="inputs">
+      <label for="{{parameters.[6].parameter}}">{{parameters.[6].parameter}}:</label>
+      <input type="number" placeholder='< 1.0 ppm' step='.1' data-parent='{{parameters.[6].parameter}}'
+        id="{{parameters.[6].parameter}}" name="{{parameters.[6].parameter}}">
+    </div>
+    <div class="inputs">
+      <label for="{{parameters.[7].parameter}}">{{parameters.[7].parameter}}:</label>
+      <input type="number" placeholder='Undetectable' step='.1' data-parent='{{parameters.[7].parameter}}'
+        id="{{parameters.[7].parameter}}" name="{{parameters.[7].parameter}}">
+    </div>
+    <input type="button" id='submitParams' value="Submit">
+  </div>
+  <div class="inputSubgrid">
+    {{#each parameters}}
+    <div class="inputs">
+      <h1>Parameter</h1>
+      <h1>7 Day Avg</h1>
+    </div>
+    {{/each}}
+    <div></div>
+  </div>
+  <div class="inputSubgrid">
+    {{#each parameters}}
+    <div class="inputs">
+      <h1>Parameter</h1>
+      <h1>Month Avg</h1>
+    </div>
+    {{/each}}
+    <div></div>
+  </div>
+</section>

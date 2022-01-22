@@ -7,16 +7,4 @@
     </div>
     {{/each}}
   </div>
-  <div id="parameterInputs" class='showHide'>
-    <div class="inputSubgrid">
-      {{#each parameters}}
-      <div class="inputs">
-        <label for="{{this.parameter}}">{{this.parameter}}:</label>
-        <input type="text" data-parent='{{this.parameter}}'
-          id="{{this.parameter}}" name="{{this.parameter}}">
-      </div>
-      {{/each}}
-      <input type="button" id='submitParams' value="Submit">
-    </div>
-  </div>
 </section>

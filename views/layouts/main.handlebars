@@ -12,8 +12,13 @@
 <body>
   <header>
     <div class="navbar">
-      <h1>Tank Keeper</h1>
-      <button id="login">Log In</button>
+      <a href="/"><h1>Tank Keeper</h1></a>
+      {{#unless loggedIn}}
+      <a href="/myParameters"><button id="profile">My Profile</button></a>
+      {{else}}
+      <a href="/login"><button id="logButton" class="navBtn">login</button></a>
+      <a href="/signup"><button id="signupButton" class="navBtn">signup</button></a>
+      {{/unless}}
     </div>
   </header>
     {{{body}}}
